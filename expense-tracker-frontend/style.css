@@ -1,0 +1,260 @@
+/* General styles
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9fafb;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #4CAF50;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  form input, form button {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  form input[type="number"], form input[type="text"], form input[type="date"] {
+    background-color: #f8f8f8;
+  }
+  
+  form button {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Expense List 
+  #expenses-list {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .expense-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .expense-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .expense-item strong {
+    font-size: 1.2rem;
+    color: #4CAF50;
+  }
+  
+  .expense-item p {
+    color: #888;
+    font-size: 0.9rem;
+  }
+  
+  button.edit, button.delete {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.edit:hover {
+    background-color: #45a049;
+  }
+  
+  button.delete {
+    background-color: #e74c3c;
+  }
+  
+  button.delete:hover {
+    background-color: #c0392b;
+  }
+  
+  button.edit, button.delete {
+    margin-right: 10px;
+  }
+  #charts {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 40px;
+  }
+  
+  canvas {
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background: #111;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  h1 {
+    color: #00ffcc;
+  }
+  
+  nav button {
+    margin-left: 10px;
+    padding: 8px 12px;
+    background-color: #222;
+    border: 1px solid #00ffcc;
+    color: #00ffcc;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  nav button:hover {
+    background-color: #00ffcc;
+    color: #111;
+  }
+  
+  .section {
+    display: none;
+  }
+  
+  .section.active {
+    display: block;
+  }
+  
+  .card {
+    background: #222;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  
+  .charts {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .chart {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  form input,
+  form select,
+  form button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  form button {
+    background: #00ffcc;
+    color: #111;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background: #00ccaa;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 10px;
+    border-bottom: 1px solid #444;
+    text-align: left;
+  }
+  td button {
+  background: #00ffcc;
+  border: none;
+  padding: 5px 10px;
+  margin: 0 2px;
+  cursor: pointer;
+  color: #111;
+  border-radius: 4px;
+}
+
+td button:hover {
+  background: #00ccaa;
+}
+td button {
+    background-color: #00ffcc;
+    border: none;
+    padding: 4px 10px;
+    margin: 2px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  td button:hover {
+    background-color: #00d9b3;
+  }
